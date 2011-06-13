@@ -1,8 +1,12 @@
 require 'adapter'
-require 'cassandra/0.7'
+require 'cassandra/0.8'
 
 module Adapter
   module Cassandra
+    def key?(key)
+      client.exists?(options[:column_family], key_for(key))
+    end
+
     def read(key)
       decode(client.get(options[:column_family], key_for(key)))
     end
