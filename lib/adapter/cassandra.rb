@@ -36,7 +36,7 @@ module Adapter
       return nil if value.empty?
       case value
       when Hash
-        value["toystore"] if value.has_key?("toystore")
+        value.has_key?('toystore') ? value['toystore'] : value
       else
         value
       end
