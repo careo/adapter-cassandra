@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   s.add_dependency 'adapter', '~> 0.5.1'
-  s.add_dependency 'cassandra', '~> 0.11.1'
+  s.add_dependency 'cassandra', '~> 0.12.1'
 end

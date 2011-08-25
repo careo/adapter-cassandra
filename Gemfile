@@ -1,7 +1,7 @@
 source "http://rubygems.org"
 
 # AKK: specifying this dep here allows us to require a specific file
-gem 'cassandra', '~> 0.11.1', :require => 'cassandra/0.8'
+gem 'cassandra', '0.12.1', :require => 'cassandra/0.8'
 
 gemspec
 
